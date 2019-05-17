@@ -9,6 +9,10 @@ public class GuestCheckoutTest extends HomepagePage {
     public void guestCheckoutTest() {
         openHomePage();
         openCategoryPage();
+        openProductPage();
+        addToCart();
+        openShoppingCart();
+        checkShoppingCart();
     }
 
 }
