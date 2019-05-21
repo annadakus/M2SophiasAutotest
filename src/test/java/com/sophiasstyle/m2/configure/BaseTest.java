@@ -17,18 +17,18 @@ import static com.codeborne.selenide.WebDriverRunner.clearBrowserCache;
 public class BaseTest {
 
     @Before
-    public void setUp (){
+    public void setUp() {
         Configuration.timeout = 50000;
     }
 
 
     @After
-    public void clearLocalStorage(){
+    public void clearLocalStorage() {
         Selenide.executeJavaScript("localStorage.clear()");
     }
 
     @After
-    public void clearCache(){
+    public void clearCache() {
         clearBrowserCache();
     }
 

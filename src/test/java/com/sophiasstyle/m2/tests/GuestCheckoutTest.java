@@ -6,13 +6,15 @@ import org.junit.Test;
 public class GuestCheckoutTest extends HomepagePage {
 
     @Test
-    public void guestCheckoutTest() {
+    public void guestCheckoutTest() throws InterruptedException {
         openHomePage();
         openCategoryPage();
         openProductPage();
         addToCart();
         openShoppingCart();
         checkShoppingCart();
+        openCheckoutPage();
+        fillOutShippingInfo("anna@ecomitize.com", "Anna", "Test", "7 Test street", "Test", "Nebraska", "68138", "United States", "123456789");
     }
 
 }
