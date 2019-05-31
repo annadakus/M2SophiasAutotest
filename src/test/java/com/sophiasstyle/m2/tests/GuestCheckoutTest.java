@@ -8,13 +8,14 @@ public class GuestCheckoutTest extends HomepagePage {
     @Test
     public void guestCheckoutTest() throws InterruptedException {
         openHomePage();
-        openCategoryPage();
-        openProductPage();
-        addToCart();
-        openShoppingCart();
+        goToCategoryPage();
+        goToSecondProductPage();
+        addProductToCart();
+        goToShoppingCart();
         checkShoppingCart();
-        openCheckoutPage();
-        fillOutShippingInfo("anna@ecomitize.com", "Anna", "Test", "7 Test street", "Test", "Nebraska", "68138", "United States", "123456789");
+        goToCheckoutPage();
+        fillOutShippingInfo("anna@ecomitize.com", "Anna", "Test",
+                "7 Test street", "Test", "Nebraska", "68138",
+                "United States", "123456789");
     }
-
 }
