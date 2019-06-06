@@ -6,7 +6,7 @@ import org.junit.Test;
 public class LoggedInCheckoutTest extends HomepagePage {
 
     @Test
-    public void LoggedInCheckoutTest() throws InterruptedException{
+    public void loggedInCheckoutTest() throws InterruptedException{
         openHomePage();
         goToLoginPage();
         login("anna@ecomitize.com", "1111abcd1111Q");
