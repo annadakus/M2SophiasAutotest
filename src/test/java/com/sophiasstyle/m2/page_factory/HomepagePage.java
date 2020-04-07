@@ -36,62 +36,62 @@ public class HomepagePage extends BaseTest {
         System.out.println("Category page is opened");
     }
 
-    @Step
-    protected void goToSecondProductPage() {
-        $("#page-title-heading").scrollTo().$("pre-footer-content");
-        $x("//*[@class='item product product-item'][2]").hover();
-        $x("//*[@class='item product product-item'][2]//h2").click();
-        System.out.println("Product page is opened");
-    }
+//     @Step
+//     protected void goToSecondProductPage() {
+//         $("#page-title-heading").scrollTo().$("pre-footer-content");
+//         $x("//*[@class='item product product-item'][2]").hover();
+//         $x("//*[@class='item product product-item'][2]//h2").click();
+//         System.out.println("Product page is opened");
+//     }
 
-    @Step
-    protected void addProductToCart() {
-        $x("//*[@id='product-addtocart-button']").click();
-        System.out.println("Product is added");
-    }
+//     @Step
+//     protected void addProductToCart() {
+//         $x("//*[@id='product-addtocart-button']").click();
+//         System.out.println("Product is added");
+//     }
 
-    @Step
-    protected void goToShoppingCart() throws InterruptedException {
-        Thread.sleep(10000);
-        $x("//*[@class='minicart-wrapper']").click();
-        $x("//*[@class='action viewcart']").hover().click();
-    }
+//     @Step
+//     protected void goToShoppingCart() throws InterruptedException {
+//         Thread.sleep(10000);
+//         $x("//*[@class='minicart-wrapper']").click();
+//         $x("//*[@class='action viewcart']").hover().click();
+//     }
 
-    @Step
-    protected void checkShoppingCart() {
-        $x("//*[@class='action showcart']/span[last()]").shouldHave(Condition.text("1"));
-        $(".page-title").shouldHave(Condition.text("Shopping Cart"));
-    }
+//     @Step
+//     protected void checkShoppingCart() {
+//         $x("//*[@class='action showcart']/span[last()]").shouldHave(Condition.text("1"));
+//         $(".page-title").shouldHave(Condition.text("Shopping Cart"));
+//     }
 
-    @Step
-    protected void goToCheckoutPage() {
-        $x("//*[@class='item']/button").click();
-    }
+//     @Step
+//     protected void goToCheckoutPage() {
+//         $x("//*[@class='item']/button").click();
+//     }
 
-    @Step
-    protected void fillOutShippingInfo(String... strings) {
-        int x = strings.length;
-        if(x==9){
-            $x("//div[@class='control _with-tooltip']//input[@name='username']").setValue((strings[0]));
-            $x("//input[@name='firstname']").setValue((strings[1]));
-            $x("//input[@name='lastname']").setValue((strings[2]));
-            $x("//input[@name='street[0]']").setValue((strings[3]));
-            $x("//input[@name='city']").setValue((strings[4]));
-            $x("//select[@name='region_id']").selectOption((strings[5]));
-            $x("//input[@name='postcode']").setValue((strings[6]));
-            $x("//select[@name='country_id']").selectOption((strings[7]));
-            $x("//input[@name='telephone']").setValue((strings[8]));
-        }
-        else{
-            $x("//input[@name='firstname']").setValue((strings[0]));
-            $x("//input[@name='lastname']").setValue((strings[1]));
-            $x("//input[@name='street[0]']").setValue((strings[2]));
-            $x("//input[@name='city']").setValue((strings[3]));
-            $x("//select[@name='region_id']").selectOption((strings[4]));
-            $x("//input[@name='postcode']").setValue((strings[5]));
-            $x("//select[@name='country_id']").selectOption((strings[6]));
-            $x("//input[@name='telephone']").setValue((strings[7]));
-        }
+//     @Step
+//     protected void fillOutShippingInfo(String... strings) {
+//         int x = strings.length;
+//         if(x==9){
+//             $x("//div[@class='control _with-tooltip']//input[@name='username']").setValue((strings[0]));
+//             $x("//input[@name='firstname']").setValue((strings[1]));
+//             $x("//input[@name='lastname']").setValue((strings[2]));
+//             $x("//input[@name='street[0]']").setValue((strings[3]));
+//             $x("//input[@name='city']").setValue((strings[4]));
+//             $x("//select[@name='region_id']").selectOption((strings[5]));
+//             $x("//input[@name='postcode']").setValue((strings[6]));
+//             $x("//select[@name='country_id']").selectOption((strings[7]));
+//             $x("//input[@name='telephone']").setValue((strings[8]));
+//         }
+//         else{
+//             $x("//input[@name='firstname']").setValue((strings[0]));
+//             $x("//input[@name='lastname']").setValue((strings[1]));
+//             $x("//input[@name='street[0]']").setValue((strings[2]));
+//             $x("//input[@name='city']").setValue((strings[3]));
+//             $x("//select[@name='region_id']").selectOption((strings[4]));
+//             $x("//input[@name='postcode']").setValue((strings[5]));
+//             $x("//select[@name='country_id']").selectOption((strings[6]));
+//             $x("//input[@name='telephone']").setValue((strings[7]));
+//         }
 
     }
 }
