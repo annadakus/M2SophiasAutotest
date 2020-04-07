@@ -10,7 +10,7 @@ public class HomepagePage extends BaseTest {
 
     @Step
     protected void openHomePage() {
-        open("https://m2.sophiasstyle.com");
+        open("https://sophiasstyle.com");
     }
 
     @Step
