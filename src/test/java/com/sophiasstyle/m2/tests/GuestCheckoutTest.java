@@ -9,13 +9,13 @@ public class GuestCheckoutTest extends HomepagePage {
     public void guestCheckoutTest() throws InterruptedException {
         openHomePage();
         goToCategoryPage();
-        goToSecondProductPage();
-        addProductToCart();
-        goToShoppingCart();
-        checkShoppingCart();
-        goToCheckoutPage();
-        fillOutShippingInfo("anna@ecomitize.com", "Anna", "Test",
-                "7 Test street", "Test", "Nebraska", "68138",
-                "United States", "123456789");
+//         goToSecondProductPage();
+//         addProductToCart();
+//         goToShoppingCart();
+//         checkShoppingCart();
+//         goToCheckoutPage();
+//         fillOutShippingInfo("anna@ecomitize.com", "Anna", "Test",
+//                 "7 Test street", "Test", "Nebraska", "68138",
+//                 "United States", "123456789");
     }
 }
